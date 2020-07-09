@@ -22,11 +22,13 @@ tab=" --tab"
 ./reGenesisAll.sh
 
 # 3. Start bootnode
+# ./start_bootnode.sh "127.0.0.1" 30310 "boot.key"
 bootnodeActions="./start_bootnode.sh $BOOTNODE_IP $BOOTNODE_PORT $BOOTNODE_KEY"
 gnome-terminal --tab -e "${bootnodeActions}"
 
 
 # 4. Start nodes
+# ./start_node.sh "node1" 1 "127.0.0.1" 30311 ? 1515 8501
 optionsNodes=()
 for(( i=1; i<=$SYSTEM_NUMNODES; i++ ))
 do

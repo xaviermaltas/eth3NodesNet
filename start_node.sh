@@ -22,6 +22,7 @@ print_conf(){
 	echo "[*] Starting $NODE_NAME"
 	echo " "
 	echo "Directory: $PWD/$NODE_NAME"
+	echo "Network: $NET_ID " 
 	echo "$NODE_IP:$NODE_PORT , rpc: $NODE_RPC_PORT"
 	echo " "
 }
